@@ -10,8 +10,12 @@ export default function DrawerNav() {
         <Link href="/" prefetch={false}>
           <h2>Home</h2>
         </Link>
-        <h2>Nosotros</h2>
-        <h2>Contacto</h2>
+        <Link href="/about" prefetch={false}>
+          <h2>Nosotros</h2>
+        </Link>
+        <Link href="/contact" prefetch={false}>
+          <h2>Contacto</h2>
+        </Link>
         <MenuNavbar />
       </div>
       <div className={styles.rooms}>

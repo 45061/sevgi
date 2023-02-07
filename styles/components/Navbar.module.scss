@@ -29,4 +29,11 @@
   justify-content: space-between;
   margin: 5px 50px;
   align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #638337;
+  }
 }
