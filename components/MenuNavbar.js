@@ -115,9 +115,13 @@ export default function MenuNavbar() {
           {/* <Link href="/userProfile"> */}
           {/* <Menu.Item icon={<User size={14} />}>Perfil</Menu.Item> */}
           {/* </Link> */}
-          <Link href="/userProfile" prefetch={false}>
-            <Menu.Item icon={<User size={14} />}>Perfil</Menu.Item>
-          </Link>
+          {auth ? (
+            <Link href="/userProfile" prefetch={false}>
+              <Menu.Item icon={<User size={14} />}>Perfil</Menu.Item>
+            </Link>
+          ) : (
+            <></>
+          )}
         </Menu.Dropdown>
       </Menu>
       {/* <PublicModal
