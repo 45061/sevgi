@@ -1,6 +1,6 @@
 // import { useDispatch, useSelector } from "react-redux";
 
-import { Burger, Box, NavLink, Drawer } from "@mantine/core";
+import { Burger, Box, NavLink, Drawer, Menu } from "@mantine/core";
 import { IconBuildingSkyscraper } from "@tabler/icons";
 
 // import { showHamburgerNav } from "../app/store/actions/modalAction";
@@ -10,6 +10,7 @@ import Image from "next/image";
 import styles from "../styles/components/Navbar.module.scss";
 import DrawerNav from "./DrawerNav";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavBar() {
   const [opened, setOpened] = useState(false);
@@ -30,20 +31,24 @@ export default function NavBar() {
           onClick={() => setOpened((o) => !o)}
           color="#d1aa65"
         />
-        <Image src="/Sevgi.png" alt="Sevgi Logo" width={150} height={80} />
-        <Box sx={{ width: 240 }}>
-          <NavLink
-            label="Conocenos"
-            icon={
+        <Link href="/">
+          <Image src="/Sevgi.png" alt="Sevgi Logo" width={150} height={80} />
+        </Link>
+        <Menu shadow="md" width={200}>
+          <Menu.Target>
+            <button>
               <IconBuildingSkyscraper size={16} stroke={1.5} color="#d1aa65" />
-            }
-            childrenOffset={28}
-          >
-            <NavLink label="First child link" />
+              Conocenos
+            </button>
+          </Menu.Target>
+          <Menu.Dropdown>
+            <Link href="/room1">
+              <NavLink label="Habitación Familiar" />
+            </Link>
             <NavLink label="Second child link" />
             <NavLink label="Third child link" />
-          </NavLink>
-        </Box>
+          </Menu.Dropdown>
+        </Menu>
       </div>
       <Drawer
         opened={opened}
