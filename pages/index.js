@@ -7,9 +7,7 @@ import RoomsData from "../components/RoomsData";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.container__firtsBox}>
-        <h1>Sevgi Sense</h1>
-      </div>
+      <div className={styles.container__firtsBox}></div>
       <div className={styles.container__secondBox}>
         <h2>Bienvenido a Sevgi Sense Bogotá</h2>
         <p>

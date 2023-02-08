@@ -2,6 +2,11 @@
   margin: 0 30px;
   padding-top: 130px;
 }
+@media (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+}
 
 .container__data {
   margin-top: 40px;
@@ -35,6 +40,15 @@
   p {
     font-size: 19px;
     font-family: sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
+  .data__title {
+    padding: 0;
+    p {
+      text-align: justify;
+    }
   }
 }
 
@@ -102,5 +116,11 @@
     direction: ltr;
     font-weight: 400;
     font-style: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .data__roomInfo {
+    flex-direction: column;
   }
 }
