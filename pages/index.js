@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 import CardTourism from "../components/CardTourism";
-import RoomsData from "../components/RoomsData";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,7 +30,47 @@ export default function Home() {
       </div>
       <div className={styles.container__thirdBox}>
         <h2>Nuestras Habitaciones</h2>
-        <RoomsData />
+        <div className={styles.thirdBox__rooms}>
+          <Link href="/room1">
+            <div className={styles.rooms__bookingRoom}>
+              <Image
+                className={styles.bookingRoom__Image}
+                src="/101.jpg"
+                alt="first Room"
+                width={400}
+                height={320}
+              />
+              <h3>Habitación Familiar</h3>
+              <h4>Capacidad 5 Personas</h4>
+            </div>
+          </Link>
+          <Link href="/room2">
+            <div className={styles.rooms__bookingRoom}>
+              <Image
+                className={styles.bookingRoom__Image}
+                src="/201.jpg"
+                alt="second Room"
+                width={400}
+                height={320}
+              />
+              <h3>Habitación Triple Baño Privado</h3>
+              <h4>Capacidad 3 Personas</h4>
+            </div>
+          </Link>
+          <Link href="/room3">
+            <div className={styles.rooms__bookingRoom}>
+              <Image
+                className={styles.bookingRoom__Image}
+                src="/202.jpg"
+                alt="first Room"
+                width={400}
+                height={320}
+              />
+              <h3>Habitación Triple Baño Compartido</h3>
+              <h4>Capacidad 3 Personas</h4>
+            </div>
+          </Link>
+        </div>
       </div>
       <div className={styles.quarterBox__rooms}>
         <div className={styles.oporto__tourism}>
@@ -61,18 +101,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 }

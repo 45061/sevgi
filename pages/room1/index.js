@@ -61,11 +61,16 @@ export default function room() {
             juntos, cuenta con dos baños compartidos.
           </p>
         </div>
-        <div className="sandbox">
-          <section className="sandbox__carousel">
-            <Carousel />
-          </section>
+        <div className={styles.data__carousel}>
+          <div className="sandbox">
+            <section className="sandbox__carousel">
+              <Carousel />
+            </section>
+          </div>
         </div>
+      </div>
+      <div className={styles.data__image}>
+        <Image src="/101.jpg" alt="room one" width={350} height={230} />
       </div>
       <div className={styles.data__roomInfo}>
         <div className={styles.roomInfo__room}>
