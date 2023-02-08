@@ -1,9 +1,9 @@
-// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { Burger, Box, NavLink, Drawer, Menu } from "@mantine/core";
 import { IconBuildingSkyscraper } from "@tabler/icons";
 
-// import { showHamburgerNav } from "../app/store/actions/modalAction";
+import { showHamburgerNav } from "../store/actions/modalAction";
 
 import Image from "next/image";
 
@@ -15,9 +15,13 @@ import Link from "next/link";
 export default function NavBar() {
   const [opened, setOpened] = useState(false);
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const { showingHamburgerNav } = useSelector((state) => state.modalReducer);
+  const handleClic = () => {
+    dispatch(showHamburgerNav());
+  };
+
+  const { showingHamburgerNav } = useSelector((state) => state.modalReducer);
 
   return (
     <div className={styles.nav}>
@@ -27,8 +31,8 @@ export default function NavBar() {
       </div>
       <div className={styles.nav__navBar}>
         <Burger
-          opened={opened}
-          onClick={() => setOpened((o) => !o)}
+          opened={showingHamburgerNav}
+          onClick={handleClic}
           color="#d1aa65"
         />
         <Link href="/">
@@ -45,14 +49,18 @@ export default function NavBar() {
             <Link href="/room1">
               <NavLink label="Habitación Familiar" />
             </Link>
-            <NavLink label="Second child link" />
-            <NavLink label="Third child link" />
+            <Link href="/room2">
+              <NavLink label="Habitacion Triple Baño Privado" />
+            </Link>
+            <Link href="/room3">
+              <NavLink label="Habitacion Triple Baño Compartido" />
+            </Link>
           </Menu.Dropdown>
         </Menu>
       </div>
       <Drawer
-        opened={opened}
-        onClose={() => setOpened((o) => !o)}
+        opened={showingHamburgerNav}
+        onClose={handleClic}
         size="xl"
         position="bottom"
       >
