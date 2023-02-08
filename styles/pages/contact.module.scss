@@ -74,3 +74,23 @@
   border-radius: 3%;
   box-shadow: 10px 10px rgb(231, 230, 230);
 }
+
+@media (max-width: 600px) {
+  .data__loc {
+    display: none;
+  }
+}
+
+.data__loc2 {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .data__loc2 {
+    display: flex;
+    margin: 5px 0 50px 0;
+    border: #638337 solid 3px;
+    border-radius: 3%;
+    box-shadow: 10px 10px rgb(231, 230, 230);
+  }
+}
