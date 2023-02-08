@@ -1,3 +1,5 @@
+@import "../styles/abstract/mixins";
+
 .container {
   padding: 0;
 }
@@ -31,6 +33,14 @@
   }
 }
 
+@media (max-width: 600px) {
+  .container__firtsBox {
+    background: none;
+    height: 130px;
+    padding: 0px;
+  }
+}
+
 .container__secondBox {
   display: flex;
   flex-direction: column;
@@ -56,6 +66,20 @@
   }
 }
 
+@media (max-width: 600px) {
+  .container__secondBox {
+    margin: 0;
+    padding: 0;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: 30px;
+      text-align: justify;
+    }
+  }
+}
+
 .container__thirdBox {
   background-color: #eee;
   display: flex;
@@ -77,6 +101,22 @@
 .thirdBox__rooms {
   display: flex;
   gap: 60px;
+}
+
+@media (max-width: 600px) {
+  .container__thirdBox {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .thirdBox__rooms {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .rooms__bookingRoom {
@@ -129,6 +169,13 @@
   }
 }
 
+@media (max-width: 600px) {
+  .tourism__card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .tourism__card {
   display: flex;
   padding: 30px 50px;

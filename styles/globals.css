@@ -240,6 +240,13 @@ a {
   margin-right: auto;
   padding: 0 420px;
 }
+
+@media (min-width: 600px) {
+  .sandbox {
+    max-width:600px;
+    padding: 0;
+  }
+}
 .sandbox__carousel {
   background-color: var(--background-code);
 }

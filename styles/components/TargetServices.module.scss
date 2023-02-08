@@ -22,6 +22,14 @@
   gap: 30px;
 }
 
+@media (max-width: 600px) {
+  .service__buttons {
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+  }
+}
+
 .buttons__card {
   display: flex;
   flex-direction: column;

@@ -94,13 +94,13 @@
   height: 0.3rem;
   content: "";
 }
-.embla__dot--selected:after {
+.embla__dot__selected:after {
   background: linear-gradient(45deg, rgb(47, 112, 193), rgb(116, 97, 195));
 }
 .embla__button {
   z-index: 1;
   color: rgb(249, 249, 249);
-  position: absolute;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +110,7 @@
   width: 4rem;
   height: 4rem;
 }
-.embla__button--prev {
+.embla__button__prev {
   left: 1.6rem;
 }
 .embla__button--next {
