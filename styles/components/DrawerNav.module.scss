@@ -20,3 +20,9 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 600px) {
+  .rooms {
+    display: none;
+  }
+}

@@ -25,6 +25,13 @@
     direction: ltr;
   }
 }
+@media (max-width: 600px) {
+  .data__dataInitial {
+    h1 {
+      text-align: center;
+    }
+  }
+}
 
 .data__dataDescription {
   margin: 20px 0;
@@ -44,6 +51,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  .data__dataDescription {
+    margin: 0;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
 .dataDescription__mision {
   margin: 20px;
   display: flex;
@@ -52,12 +68,24 @@
   padding: 0 600px;
 }
 
+@media (max-width: 600px) {
+  .dataDescription__mision {
+    padding: 0px;
+  }
+}
+
 .dataDescription__vision {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 600px;
+}
+
+@media (max-width: 600px) {
+  .dataDescription__vision {
+    padding: 0px;
+  }
 }
 
 .dataDescription__caracteristic {

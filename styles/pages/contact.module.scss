@@ -45,6 +45,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .data__contact {
+    flex-direction: column;
+  }
+}
+
 .contac__info {
   border: #638337 solid 2px;
   border-radius: 20%;
