@@ -52,25 +52,27 @@ export default function room() {
     <div className={styles.container}>
       <div className={styles.container__data}>
         <div className={styles.data__title}>
-          <h1>Habitación Familiar</h1>
-          <h2>Capacidad para 5 personas</h2>
+          <h1>Habitación Doble</h1>
+          <h2>Capacidad para 2 personas</h2>
           <p>
-            Espectacular habitación con una capacidad de 5 personas, las cuales
-            ocuparían una cama doble, una cama sencilla y un camarote, esta
-            habitación es ideal para familias o grupos de amigos que viajan
-            juntos, cuenta con dos baños compartidos.
+            Espectacular habitación doble con una capacidad de 2 personas, las
+            cuales ocuparían una camas doble, cuenta con un baño con todos sus
+            implementos, esta habitación es ideal para familias o grupos de
+            amigos que viajan juntos, cuenta con televisor SmartTV y TDT.
           </p>
         </div>
         <div className={styles.data__carousel}>
           <div className="sandbox">
             <section className="sandbox__carousel">
-              <Carousel />
+              <Carousel
+                foto1="doble.jpg"
+                foto2="doble2.jpg"
+                foto3="doble3.jpg"
+                foto4="doble4.jpg"
+              />
             </section>
           </div>
         </div>
-      </div>
-      <div className={styles.data__image}>
-        <Image src="/101.jpg" alt="room one" width={350} height={230} />
       </div>
       <div className={styles.data__roomInfo}>
         <div className={styles.roomInfo__room}>
@@ -80,13 +82,14 @@ export default function room() {
           <p>Papel higienico</p>
           <p>Jabon de manos</p>
           <p>Espejos</p>
+          <p>Jabon de cuerpo</p>
+          <p>Shampoo</p>
         </div>
         <div className={styles.roomInfo__room}>
-          <h2>Equipamiento Habitación:</h2>
-          <p> Ropa de Cama</p>
+          <h2>Equipamiento de la habitación triple:</h2>
+          <p>Ropa de Cama</p>
           <p>Servicio de despertador</p>
           <p>Toallas</p>
-          <p>Artículos de aseo Gratis</p>
           <p>Recepción 24h</p>
         </div>
       </div>

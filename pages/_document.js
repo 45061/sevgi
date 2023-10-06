@@ -6,9 +6,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Sevgi Sense</title>
+        <title>Natural Sevgi</title>
         <meta name="Hostal" content="app Sevgi Sense" />
-        <link rel="icon" href="/sevgi.png" />
+        <link rel="icon" href="/AF-Logo-Natural.png" />
       </Head>
       <body>
         <Main />

@@ -12,7 +12,7 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import image101 from "../public/101.jpg";
 
-export default function Carousel() {
+export default function Carousel({ foto1, foto2, foto3, foto4, foto5, foto6 }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
@@ -52,14 +52,53 @@ export default function Carousel() {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
-            <img className="embla__slide__img" src="/101.jpg" alt="room101" />
+            <img
+              className="embla__slide__img"
+              src={`/${foto1}`}
+              alt="foto habitacion Natural Sevgi"
+            />
           </div>
           <div className="embla__slide">
-            <img className="embla__slide__img" src="/101-2.jpg" alt="room101" />
+            <img
+              className="embla__slide__img"
+              src={`/${foto2}`}
+              alt="foto habitacion Natural Sevgi"
+            />
           </div>
           <div className="embla__slide">
-            <img className="embla__slide__img" src="/101-3.jpg" alt="room101" />
+            <img
+              className="embla__slide__img"
+              src={`/${foto3}`}
+              alt="foto habitacion Natural Sevgi"
+            />
           </div>
+          {foto4 && (
+            <div className="embla__slide">
+              <img
+                className="embla__slide__img"
+                src={`/${foto4}`}
+                alt="foto habitacion Natural Sevgi"
+              />
+            </div>
+          )}
+          {foto5 && (
+            <div className="embla__slide">
+              <img
+                className="embla__slide__img"
+                src={`/${foto5}`}
+                alt="foto habitacion Natural Sevgi"
+              />
+            </div>
+          )}
+          {foto6 && (
+            <div className="embla__slide">
+              <img
+                className="embla__slide__img"
+                src={`/${foto6}`}
+                alt="foto habitacion Natural Sevgi"
+              />
+            </div>
+          )}
         </div>
       </div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />

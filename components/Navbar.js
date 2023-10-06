@@ -26,7 +26,7 @@ export default function NavBar() {
   return (
     <div className={styles.nav}>
       <div className={styles.nav__contact}>
-        <p>Carrera: 80D # 22 - 72</p>
+        <p>Calle 23 # 83 - 33</p>
         <p>Cel: 305 801 0485</p>
       </div>
       <div className={styles.nav__navBar}>
@@ -36,7 +36,12 @@ export default function NavBar() {
           color="#d1aa65"
         />
         <Link href="/">
-          <Image src="/Sevgi.png" alt="Sevgi Logo" width={150} height={80} />
+          <Image
+            src="/AF-Logo-Natural.png"
+            alt="Sevgi Logo"
+            width={150}
+            height={80}
+          />
         </Link>
         <Menu shadow="md" width={200}>
           <Menu.Target>

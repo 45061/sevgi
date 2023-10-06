@@ -31,43 +31,69 @@ export default function Home() {
       <div className={styles.container__thirdBox}>
         <h2>Nuestras Habitaciones</h2>
         <div className={styles.thirdBox__rooms}>
-          <Link href="/room1">
+          <Link href="/apartaEstudio">
             <div className={styles.rooms__bookingRoom}>
               <Image
                 className={styles.bookingRoom__Image}
-                src="/101.jpg"
-                alt="first Room"
-                width={400}
-                height={320}
+                src="/apartaEstudio.jpg"
+                alt="Aparta Estudio"
+                width={300}
+                height={220}
               />
-              <h3>Habitación Familiar</h3>
-              <h4>Capacidad 5 Personas</h4>
+              <h3>Aparta Estudio</h3>
+              <h4>Capacidad 4 Personas</h4>
             </div>
           </Link>
-          <Link href="/room2">
+          <Link href="/cuadruple">
             <div className={styles.rooms__bookingRoom}>
               <Image
                 className={styles.bookingRoom__Image}
-                src="/201.jpg"
-                alt="second Room"
-                width={400}
-                height={320}
+                src="/cuadruple.jpeg"
+                alt="habitacion cuadruple"
+                width={300}
+                height={220}
               />
-              <h3>Habitación Triple Baño Privado</h3>
+              <h3>Habitación Cuadruple</h3>
+              <h4>Capacidad 4 Personas</h4>
+            </div>
+          </Link>
+          <Link href="/triple">
+            <div className={styles.rooms__bookingRoom}>
+              <Image
+                className={styles.bookingRoom__Image}
+                src="/triple.jpg"
+                alt="habitacion triple"
+                width={300}
+                height={220}
+              />
+              <h3>Habitación Triple</h3>
               <h4>Capacidad 3 Personas</h4>
             </div>
           </Link>
-          <Link href="/room3">
+          <Link href="/doble">
             <div className={styles.rooms__bookingRoom}>
               <Image
                 className={styles.bookingRoom__Image}
-                src="/202.jpg"
-                alt="first Room"
-                width={400}
-                height={320}
+                src="/doble.jpg"
+                alt="habitacion doble"
+                width={300}
+                height={220}
               />
-              <h3>Habitación Triple Baño Compartido</h3>
-              <h4>Capacidad 3 Personas</h4>
+              <h3>Habitación Doble</h3>
+              <h4>Capacidad 2 Personas</h4>
+            </div>
+          </Link>
+          <Link href="/dobleDelux">
+            <div className={styles.rooms__bookingRoom}>
+              <Image
+                className={styles.bookingRoom__Image}
+                src="/dobleDelux.jpg"
+                alt="habitacion doble delux"
+                width={300}
+                height={220}
+              />
+              <h3>Habitación Doble Delux</h3>
+              <h4>Capacidad 2 Personas</h4>
             </div>
           </Link>
         </div>
